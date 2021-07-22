@@ -1,0 +1,26 @@
+{
+  "name": "ecthed",
+  "version": "1.0.0",
+  "description": "A repository mainly for testing etchedjs/etched features",
+  "type": "module",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acallaris/ecthed_test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/acallaris/ecthed_test/issues"
+  },
+  "homepage": "https://github.com/acallaris/ecthed_test#readme",
+  "devDependencies": {
+    "mocha": "^9.0.2"
+  },
+  "dependencies": {
+    "@etchedjs/etched": "^9.1.3"
+  }
+}
