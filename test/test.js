@@ -1,7 +1,8 @@
 import { describe, it } from 'mocha';
 import { model, etch } from '@etchedjs/etched';
+import type, * as types from '@etchedjs/type';
 
-describe('@etchedjs/etched - Test 1', () => {
+describe('@etchedjs/etched, @etchedjs/type', () => {
   it('model(), etch()', () => {
     const token = model({
       set type(x) {
@@ -30,5 +31,23 @@ describe('@etchedjs/etched - Test 1', () => {
 
     console.assert(string.type === 'string');
     console.assert(string.value === '123');
+  });
+
+  it('model(), type()', () => {
+    const user = model({
+      set name(value) {
+        if (!value.length) throw new Error('Invalid username');
+      },
+
+      set id(value) {
+        if (!Number.isSafeInteger(value) || value < 0) throw new Error('Invalid ID');
+      }
+    });
+
+    model(
+      user,
+      type('name', types.string, e => e()),
+      type('id', types.number, e => e()),
+    );
   });
 });

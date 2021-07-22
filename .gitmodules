@@ -1,3 +1,6 @@
 [submodule "etched"]
 	path = etched
 	url = https://github.com/etchedjs/etched
+[submodule "type"]
+	path = type
+	url = https://github.com/etchedjs/type
