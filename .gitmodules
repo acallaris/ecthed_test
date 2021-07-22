@@ -1,0 +1,3 @@
+[submodule "etched"]
+	path = etched
+	url = https://github.com/etchedjs/etched
