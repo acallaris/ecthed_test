@@ -1,2 +1,2 @@
 # ecthed_test
-A repository mainly for testing etchedjs/ecthed features
+A repository mainly for testing [etchedjs/etched](https://github.com/etchedjs/etched 'etchedjs/etched') features
